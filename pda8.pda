@@ -1,0 +1,6 @@
+alphabet: {0, 1}
+start: q0
+accepting: {q2}
+q0 (_, _ -> $, q1)
+q1 (0, _ -> AA, q1) (1, A -> _, q1) (_, $ -> _, q2)
+q2
